@@ -36,3 +36,5 @@ notifications:
 
 #after_success:
 #  - ./deploy.sh
+#  - export TAG=travis-demo
+#  - docker build -f Dockerfile -t $TAG .
