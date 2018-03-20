@@ -4,7 +4,7 @@ from user import User
 class TestUser:
 
     @pytest.fixture
-    def new_user()
+    def new_user():
         return User(firstname="Evans", lastname="Anyokwu",
                     job="Engineer", salary=500, address="Canvey Island")
 
