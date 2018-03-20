@@ -12,11 +12,11 @@ class User:
 
   @property
   def user_job(self):
-    return self.username + " is a " + self.job
+    return self.firstname + " is a " + self.job
 
   @property
   def user_address(self):
-    return self.username + " lives at " + self.address
+    return self.firstname + " lives at " + self.address
 
   def capital_case(self, lastname):
     return lastname.capitalize()
