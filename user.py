@@ -22,5 +22,5 @@ class User:
     return lastname.capitalize()
 
   @property
-  def salary(self):
+  def get_salary(self):
     return self.salary
