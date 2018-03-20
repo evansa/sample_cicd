@@ -9,5 +9,8 @@ def new_user():
 def test_create_user(new_user):                      
     assert new_user.user_name == "Evans Anyokwu"
         
+def test_job_name(new_user):
+	assert "Engineer" in new_user.user.job
+	
 def test_get_salary(new_user):
     assert new_user.get_salary == 500 
