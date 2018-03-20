@@ -1,0 +1,38 @@
+language: python
+
+python:
+  - "2.7"
+  - "3.6"
+
+services:
+  - mysql
+
+#before_script:
+#  - mysql -u root -e 'CREATE DATABASE test;'
+#  - mysql -u root -e "CREATE USER 'evans'@'localhost' IDENTIFIED BY 'evans';"
+#  - mysql -u root -e "GRANT ALL ON test.* TO 'evans'@'localhost';"
+
+before_install:
+  - mysql -u root --password="" < data/travis.sql
+
+install:
+  - "pip install -r requirements.txt"
+
+script: pytest test_user.py
+
+notifications:
+  email:
+    recipients:
+      - evansa@hbc.co.uk
+    on_success: always
+    on_failure: always
+  
+  #slack: '<account>:<token>#test'
+  #slack: 
+    #rooms:
+     # - secure: "jnskgirnslffffnehwaqyxolfugbhld"
+    #on_success: always
+    #on_failure: always
+
+#after_success:
+#  - ./deploy.sh
