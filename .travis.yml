@@ -26,6 +26,7 @@ notifications:
       - onyxtic@gmail.com
     on_success: always
     on_failure: always
+  webhooks: https://www.travisbuddy.com
   
 #  #slack: '<account>:<token>#test'
 #  slack: 
