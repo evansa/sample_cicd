@@ -1,7 +1,7 @@
 class User:
   '''
   just adding a simple comment 11/05/2018 
-  configure webhook.. again
+  configure webhook.. again2
   '''
   def __init__(self, firstname, lastname, job, salary, address):
     self.firstname = firstname
