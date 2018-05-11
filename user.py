@@ -1,4 +1,7 @@
 class User:
+  '''
+  just adding a simple comment 11/05/2018
+  '''
   def __init__(self, firstname, lastname, job, salary, address):
     self.firstname = firstname
     self.lastname = lastname
