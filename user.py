@@ -1,4 +1,4 @@
-# notes
+# notess
 class User:
   def __init__(self, firstname, lastname, job, salary, address):
     self.firstname = firstname
