@@ -13,4 +13,4 @@ def test_job_name(new_user):
 	assert "Engineer" in new_user.user_job
 	
 def test_get_salary(new_user):
-    assert new_user.get_salary == 50 
+    assert new_user.get_salary == 500 
